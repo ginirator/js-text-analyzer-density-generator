@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Analyzer</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<!-- Add jQuery from Google's CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Word Analyzer</h1>
+	<div>Enter your text:</div>
+	<div id="word-analyzer-content-wrapper">
+		<div class="form-container">
+			<!-- Your form goes here -->
+			<form id="word-analyzer-form">
+				<div class="input-textarea-container">
+					<textarea id="userText" name="userText" rows="10" cols="50"></textarea>
+				</div>
+			</form>
+		</div>
+
+		<div class="panel-container">
+			<!-- Container for the analyzed data -->
+			<div class="panel panel-default analyzedDataPanel">
+				<div class="panel-heading">
+					<h3 class="panel-title">Analysis Results</h3>
+				</div>
+				<div id="analyzedData" class="panel-body">
+					<!-- Analysis results will be inserted here -->
+				</div>
+			</div>
+
+			<div class="panel panel-default keywordsBox analyzedDataPanel">
+				<div class="panel-heading">
+					<h3 class="panel-title">Keyword Density</h3>
+				</div>
+				<div id="kwd-density" class="panel-body">
+					<!-- Keyword density data will be inserted here -->
+					<div id="kwd-density-data"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- This is a placeholder for the note about stop words -->
+	<div id="note">
+		<strong>Note:</strong> Certain common words, known as "stop words", are ignored in the calculation of <code>Keyword Density</code>.
+
+		<p>The current list of stop words you are using in your application is as follows:</p>
+		<p><pre style="white-space: normal;">'a', 'an', 'the', 'in', 'on', 'at', 'to', 'from', 'of', 'for', 'with', 'under', 'above', 'into', 'onto', 'across', 'through', 'between', 'among', 'he', 'she', 'it', 'they', 'them', 'his', 'her', 'its', 'their', 'who', 'which', 'that', 'i', 'you', 'me', 'us', 'and', 'or', 'but', 'yet', 'so', 'either', 'neither', 'while', 'when', 'where', 'as', 'if', 'because', 'although', 'not', 'only', 'just', 'also', 'even', 'than', 'too', 'very', 'is', 'am', 'are', 'was', 'were', 'be', 'being', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'can', 'could', 'shall', 'should', 'will', 'would', 'may', 'might', 'must'</pre></p>
+		<p>The stop words are typically ignored in many language processing tasks because they appear very frequently in a language and do not contain important meaning. Therefore, removing them can help to retain the important words in a text and improve the performance of processing tasks such as keyword extraction, text summarization, and sentiment analysis.</p>
+	</div>
+
+
+    <script src="./WordAnalyzer.js"></script>
+</body>
+</html>
