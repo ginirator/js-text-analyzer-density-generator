@@ -8,20 +8,20 @@ Here is a basic guide to use this code in a webpage:
 
 1. Create an HTML file where you want to use the generated JavaScript. You can create a textarea for input and a button to trigger the word count operation.
 
-<pre><code><!DOCTYPE html>
-<html>
-<head>
-    <title>Word Analyzer</title>
-</head>
-<body>
-    <h1>Word Analyzer</h1>
-    <textarea id="textArea" rows="10" cols="50">Enter your text here...</textarea>
-    <button onclick="analyzeText()">Analyze Text</button>
-    <div id="result"></div>
+<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;title>Word Analyzer&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Word Analyzer&lt;/h1>
+    &lt;textarea id="textArea" rows="10" cols="50">Enter your text here...&lt;/textarea>
+    &lt;button onclick="analyzeText()">Analyze Text&lt;/button>
+    &lt;div id="result">&lt;/div>
 
-    <script src="YourFileName.js"></script>
-</body>
-</html></code></pre>
+	&lt;script src="YourFileName.js">&lt;/script>
+&lt;/body>
+&lt;/html></code></pre>
 
 2. Replace the console.log statements in the `display()` method with `document.getElementById` statements. This is to display the results in your HTML page instead of the console.
 
