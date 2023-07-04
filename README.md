@@ -1,12 +1,12 @@
 # Javascript Analyzer Density Generator
 
-This repository contains a JavaScript-based text analysis tool that provides word, character, sentence, and paragraph counts, as well as reading and speaking time estimates. It features a keyword density analyzer for SEO-focused content optimization.ry to learn how it works or to integrate it into your own project.
+This repository contains a JavaScript-based text analysis tool that provides word, character, sentence, and paragraph counts, as well as reading and speaking time estimates. It features a keyword density analyzer for SEO-focused content optimization. Try to learn how it works or integrate it into your project.
 
-This TypeScript code can be used in a web page once it's compiled to JavaScript. You can use a tool like tsc (TypeScript Compiler) to compile your TypeScript code into JavaScript.
+This TypeScript code can be used in a web page once it's compiled into JavaScript. You can use a tool like `tsc` (TypeScript Compiler) to compile your TypeScript code into JavaScript.
 
-Here is a basic guide to use this code in a webpage:
+Here is a basic guide to using this code on a webpage:
 
-1. Create an HTML file where you want to use the generated JavaScript. You can create a textarea for input and a button to trigger the word count operation.
+1. Create an HTML file where you want to use the generated JavaScript. You can create a text area for input and a button to trigger the word count operation.
 
 <pre><code>&lt;!DOCTYPE html>
 &lt;html>
